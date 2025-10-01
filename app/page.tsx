@@ -61,6 +61,9 @@ export default function Page() {
       </header>
 
       {/* Hero */}
+      import Image from "next/image";
+
+...
       <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-6 py-12">
   <div>
     <h1 className="text-4xl font-bold mb-4">👑 Форекс робот RICHMAN 👑</h1>

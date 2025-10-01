@@ -62,34 +62,43 @@ export default function Page() {
       </header>
 
       {/* Hero */}
-      <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-6 py-12">
-  <div>
-    <h1 className="text-4xl font-bold mb-4">👑 Форекс робот RICHMAN 👑</h1>
-    <p className="text-lg text-gray-600 mb-6">
+      <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-12 py-16 max-w-6xl mx-auto px-4">
+  {/* Левая часть — текст */}
+  <div className="flex flex-col justify-center">
+    <h1 className="text-5xl font-extrabold mb-6 leading-tight">
+      👑 Форекс робот <span className="text-yellow-500">RICHMAN</span> 👑
+    </h1>
+    <p className="text-lg text-gray-600 mb-6 max-w-xl">
       До 250% годовых в долларах с минимальным риском. Полностью автоматизированная система 24/7, которая управляет капиталами свыше $20M.
     </p>
-    <ul className="space-y-2 mb-6">
+    <ul className="space-y-3 mb-6 text-lg">
       <li>✅ AI подстраивается под рынок и регулирует объём сделок</li>
       <li>✅ Бесплатный тестовый период</li>
       <li>✅ Покупка или аренда</li>
     </ul>
     <div className="flex gap-4">
-      <a href="#tariffs" className="px-6 py-3 bg-black text-white rounded-lg">Купить</a>
-      <a href="#demo" className="px-6 py-3 border border-black rounded-lg">Получить демо</a>
+      <a href="#tariffs" className="px-6 py-3 bg-black text-white rounded-xl shadow hover:bg-gray-800 transition">
+        Купить
+      </a>
+      <a href="#demo" className="px-6 py-3 border border-black rounded-xl hover:bg-gray-100 transition">
+        Получить демо
+      </a>
     </div>
   </div>
 
   {/* Правая часть — картинка */}
-  <div className="flex justify-center">
+  <div className="flex justify-center md:justify-end">
     <Image
       src="/hero-bot.png"
       alt="Richman Forex Bot"
-      width={500}
-      height={400}
-      className="rounded-2xl shadow-lg"
+      width={480}
+      height={420}
+      className="rounded-2xl shadow-xl"
+      priority
     />
   </div>
 </section>
+
 
       {/* Features */}
       <section id="features" className="bg-white border-y">

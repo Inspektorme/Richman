@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from "react";
+import Image from "next/image";
 import { Shield, Clock, Bot, CreditCard, Globe, Zap, BarChart3, Rocket, Users } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -61,9 +62,6 @@ export default function Page() {
       </header>
 
       {/* Hero */}
-      import Image from "next/image";
-
-...
       <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-6 py-12">
   <div>
     <h1 className="text-4xl font-bold mb-4">👑 Форекс робот RICHMAN 👑</h1>

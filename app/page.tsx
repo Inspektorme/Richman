@@ -61,22 +61,24 @@ export default function Page() {
       </header>
 
       {/* Hero */}
-      <section className="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
-        <div>
-          <h2 className="text-4xl md:text-5xl font-extrabold leading-tight">👑 Форекс робот RICHMAN 👑</h2>
-          <p className="mt-4 text-lg opacity-80">
-            До 250% годовых в долларах с минимальным риском. Полностью автоматизированная система 24/7, которая управляет капиталами свыше $20M.
-          </p>
-          <ul className="mt-6 space-y-2 text-sm">
-            <li>✅ AI подстраивается под рынок и регулирует объём сделок</li>
-            <li>✅ Бесплатный тестовый период</li>
-            <li>✅ Покупка или аренда</li>
-          </ul>
-          <div className="mt-6 flex flex-wrap gap-3">
-            <Button><CreditCard className="w-5 h-5 mr-2" /> Купить</Button>
-            <Button variant="outline"><Rocket className="w-5 h-5 mr-2" /> Получить демо</Button>
-          </div>
-          {/* Правая часть — картинка */}
+      <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-6 py-12">
+  <div>
+    <h1 className="text-4xl font-bold mb-4">👑 Форекс робот RICHMAN 👑</h1>
+    <p className="text-lg text-gray-600 mb-6">
+      До 250% годовых в долларах с минимальным риском. Полностью автоматизированная система 24/7, которая управляет капиталами свыше $20M.
+    </p>
+    <ul className="space-y-2 mb-6">
+      <li>✅ AI подстраивается под рынок и регулирует объём сделок</li>
+      <li>✅ Бесплатный тестовый период</li>
+      <li>✅ Покупка или аренда</li>
+    </ul>
+    <div className="flex gap-4">
+      <a href="#tariffs" className="px-6 py-3 bg-black text-white rounded-lg">Купить</a>
+      <a href="#demo" className="px-6 py-3 border border-black rounded-lg">Получить демо</a>
+    </div>
+  </div>
+
+  {/* Правая часть — картинка */}
   <div className="flex justify-center">
     <Image
       src="/hero-bot.png"
@@ -86,8 +88,7 @@ export default function Page() {
       className="rounded-2xl shadow-lg"
     />
   </div>
-        </div>
-      </section>
+</section>
 
       {/* Features */}
       <section id="features" className="bg-white border-y">
